@@ -106,7 +106,7 @@ augroup numbertoggle
 augroup END
 
 lua << EOF
- require(my_lsp_config')
+ require('my_lsp_config')
 EOF
 
 
@@ -138,7 +138,7 @@ local kind_icons = {
   Operator = "",
   TypeParameter = "",
 }
-local cmp = require('~/.local/share/nvim/plugged/nvim-cmp/lua/cmp/init.lua')
+local cmp = require('cmp')
 
   -- Setup nvim-cmp.
   cmp.setup{
